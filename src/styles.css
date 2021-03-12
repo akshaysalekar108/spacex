@@ -31,7 +31,7 @@ h2{
 
 .launchesCard {
   padding: 15px;
-  height: 355px;
+  height: auto;
   width: 250px;
   background-color: #FFFFFF;
 
@@ -50,11 +50,10 @@ h2{
 
   .launchesCard {
     padding: 10px 10px 0 0;
-    height: 355px;
+    height: auto;
     width: 100%;
     padding-left: 10px;
     background-color: #FFFFFF;
-    padding-bottom: 25px;
 
   }
 
@@ -62,6 +61,10 @@ h2{
     display: flex;
     margin: auto auto auto -1.3rem;
     text-align: left;
+  }
+
+   ul {
+    padding-left: 1rem;
   }
 }
 
