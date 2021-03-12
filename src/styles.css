@@ -5,12 +5,18 @@ body {
   text-align: left;
   font-size: 14px;
   padding: 10px;
-  text-align: left
+  text-align: left;
 }
-.heading{
-    display: flex;
-    margin: auto auto auto 11.2rem;
-    text-align: left;
+
+.heading {
+  display: flex;
+  margin: auto auto auto 11.2rem;
+  text-align: left;
+}
+h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+
 }
 .container {
   display: grid;
@@ -24,59 +30,61 @@ body {
 }
 
 .launchesCard {
-    padding: 15px;
+  padding: 15px;
+  height: 355px;
+  width: 250px;
+  background-color: #FFFFFF;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #CCCCCC;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: -19px;
+  }
+
+  .launchesCard {
+    padding: 10px 10px 0 0;
     height: 355px;
-    width: 250px;
+    width: 100%;
+    padding-left: 10px;
     background-color: #FFFFFF;
-  
+    padding-bottom: 25px;
+
   }
 
-
-  @media only screen and (max-width: 700px) {
-    .container {
-        display: grid;
-        grid-template-columns: 100%;
-        background-color: #CCCCCC;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        margin-left: -19px;
-    }
-
-    .launchesCard {
-        padding: 10px 10px 0 0;
-        height: 355px;
-        width: 100%;
-        padding-left: 10px;
-        background-color: #FFFFFF;
-        padding-bottom: 25px;
-      
-      }
-
-      .heading{
-        display: flex;
-        margin: auto auto auto -1.3rem;
-        text-align: left;
-    }
+  .heading {
+    display: flex;
+    margin: auto auto auto -1.3rem;
+    text-align: left;
   }
-  
-  @media only screen and (min-device-width : 700px) and (max-device-width : 1024px) {
-    .container {
-      display: grid;
-      grid-template-columns: auto auto;
-      background-color: #CCCCCC;
-      grid-column-gap: 15px;
-      grid-row-gap: 15px;
-      padding: auto;
-      justify-content: center;
-      align-content: center;
-    }
+}
 
-    .heading{
-        display: flex;
-        margin: auto auto auto 2.2rem;
-        text-align: left;
-    }
+@media only screen and (min-device-width : 700px) and (max-device-width : 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #CCCCCC;
+    grid-column-gap: 50px;
+    grid-row-gap: 28px;
+    padding: auto;
+    justify-content: center;
+    align-content: center;
   }
+
+  .heading {
+    display: flex;
+    margin: auto auto auto 1rem;
+    text-align: left;
+    font-size: 16px;
+  }
+
+}
 
 
 
@@ -121,6 +129,3 @@ body {
   text-align: center;
 
 }
-
-
-
