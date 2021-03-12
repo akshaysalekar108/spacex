@@ -21,7 +21,6 @@ h2{
     margin-bottom: 10px;
 
 }
-
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
