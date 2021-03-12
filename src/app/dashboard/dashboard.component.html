@@ -1,0 +1,34 @@
+  <div class="">
+    <h2 class="">SpaceX Launch Programs</h2>
+  </div>
+  <div class="container">
+    <div class="launchesCard" *ngFor="let l of List">
+      <img [src]="l?.links?.mission_patch_small"  class="img" alt="space"> 
+      <p class="text-align-left">
+        <span class="font-weight-bold f-16"><a href="#">{{l.mission_name}}</a></span>
+        <span></span>
+      </p>
+      
+      <p class="text-align-left">
+        <span class="font-weight-bold">Mission Ids : </span>
+        <span></span>
+      </p>
+
+      <p class="text-align-left">
+        <span class="font-weight-bold">Launch Year :</span>
+        <span>{{l?.launch_year}}</span>
+      </p>
+
+      <p class="text-align-left">
+        <span class="font-weight-bold">Successful Launch : </span>
+        <span>{{l?.launch_success}}</span>
+      </p>
+
+      <p class="text-align-left">
+        <span class="font-weight-bold">Successful Landing :</span>
+        <span></span>
+      </p>
+      
+
+    </div>
+  </div>
